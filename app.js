@@ -24,7 +24,7 @@ app.use('/api/v1',(req,res)=>{
 const StartServer = () => {
     httpApp.listen(configs.port, () => {
         console.log(
-            `⚡ Server ::  running on PORT:${configs.port} in ${configs.env} mode`
+            `⚡ Server ::   running on PORT:${configs.port} in ${configs.env} mode`
         );
     });
     websocket(io);
